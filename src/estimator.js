@@ -1,9 +1,9 @@
 const calculatesImpact = (impact) => {
   let population = document.getElementById('population').value;
-  let timeToElapse = document.getElementById('time').value;
-  let reportedCases = document.getElementById('reported').value;
-  let totalHospitalBeds = document.getElementById('hospitals').value;
-  let periodType = document.getElementById('period').value;
+  let timeToElapse = document.getElementById('timeToElapse').value;
+  let reportedCases = document.getElementById('reportedCases').value;
+  let totalHospitalBeds = document.getElementById('totalHospitalBeds').value;
+  let periodType = document.getElementById('periodType').value;
   let duration;
 
   const occupied = 0.65 * totalHospitalBeds;
