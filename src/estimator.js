@@ -29,12 +29,10 @@ const covid19ImpactEstimator = () => {
   const impacts = calculatesImpact(10);
   const severeImpacts = calculatesImpact(50);
 
-  return (
-    (document.getElementById('impactR').innerHTML = `Impacts ${impacts}`),
-    (document.getElementById(
-      'severeimpact'
-    ).innerHTML = `Severe Impacts ${severeImpacts}`)
-  );
+  document.getElementById('impactR').innerHTML = `Impacts ${impacts}`;
+  document.getElementById(
+    'severeimpact'
+  ).innerHTML = `Severe Impacts ${severeImpacts}`;
 };
 
 export default covid19ImpactEstimator;
