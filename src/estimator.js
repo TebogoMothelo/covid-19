@@ -23,17 +23,22 @@ const calculatesImpact = (impact) => {
   const severeCases = parseInt(infectedAtTime * 0.15, 10);
   const hospitalBeds = parseInt(emptyBeds - severeCases, 10);
 
-  return [infected, infectedAtTime, severeCases, hospitalBeds];
-};
+  return [infected, infectedAtTime, severeCases,hospitalBeds]
+}
 const covid19ImpactEstimator = () => {
   const impacts = calculatesImpact(10);
   const severeImpacts = calculatesImpact(50);
 
-  document.getElementById('impactR').innerHTML = `Impacts ${impacts}`;
-  document.getElementById(
-    'severeimpact'
-  ).innerHTML = `Severe Impacts ${severeImpacts}`;
+  return document.getElementById("impactR").innerHTML=`Impacts: 
+  infections: ${impacts[0]},
+   InfectionsByRequestedTime: ${impacts[1]},
+   SevereCases: ${impacts[2]},
+   Avalaible Hospital beds: ${impacts[3]}`,
+  document.getElementById("severeimpact").innerHTML=`Severe Impacts:
+  infections: ${severeImpacts[0]},
+  InfectionsByRequestedTime: ${severeImpacts[1]},
+  SevereCases: ${severeImpacts[2]},
+  Avalaible Hospital beds: ${severeImpacts[3]}`;
+ 
 };
 
-export default covid19ImpactEstimator;
-0;
