@@ -28,17 +28,24 @@
       <input id="reported" type="number" name="data-reported-cases" /><br />
 
       <label for="totalhospitals">Total Hospitals:</label><br />
-      <input id="hospitals" type="number" name="data-total-hospital-beds" /><br />
+      <input
+        id="hospitals"
+        type="number"
+        name="data-total-hospital-beds"
+      /><br />
 
       <label for="periodtype">Period Type:</label>
       <select id="period" name="data-period-type">
         <option value="days">Days</option>
         <option value="weeks">Weeks</option>
-        <option value="months">Months</option>
-      </select><br>
+        <option value="months">Months</option> </select
+      ><br />
 
-      <button onclick="covid19ImpactEstimator()" name="data-go-estimate">Submit</button>
-      <p id="test"></p>
+      <button onclick="covid19ImpactEstimator()" name="data-go-estimate">
+        Submit
+      </button>
+      <p id="impactR"></p>
+      <p id="severeimpact"></p>
     </form>
   </body>
   <script src="estimator.js"></script>
