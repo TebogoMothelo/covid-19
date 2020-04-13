@@ -22,29 +22,30 @@
     <h1>Covid-19 Estimator</h1>
     <form>
       <label for="population">Population:</label><br />
-      <input id="population" type="number" name="data-population" /><br />
+      <input id="population" type="number" name="data-population" data-population /><br />
 
       <label for="timeToElapse">Time to Elapse:</label><br />
-      <input id="timeToElapse" type="number" name="data-time-to-elapse" /><br />
+      <input id="timeToElapse" type="number" name="data-time-to-elapse" data-time-to-elapse /><br />
 
       <label for="reportedCases">Reported Cases:</label><br />
-      <input id="reportedCases" type="number" name="data-reported-cases" /><br />
+      <input id="reportedCases" type="number" name="data-reported-cases" data-reported-cases /><br />
 
       <label for="totalHospitalBeds">Total Hospitals:</label><br />
       <input
         id="totalHospitalBeds"
         type="number"
         name="data-total-hospital-beds"
+        data-total-hospital-beds
       /><br />
 
       <label for="periodType">Period Type:</label>
-      <select id="periodType" name="data-period-type" style="width:68px;height:48px">
+      <select id="periodType" name="data-period-type" data-period-type style="width:68px;height:48px">
         <option value="days">Days</option>
         <option value="weeks">Weeks</option>
         <option value="months">Months</option> </select
       ><br />
 
-      <button onclick="covid19ImpactEstimator()" name="data-go-estimate" style="width: 68px;height:48px">
+      <button onclick="covid19ImpactEstimator()" name="data-go-estimate" data-go-estimate style="width: 68px;height:48px">
         Submit
       </button>
       <p id="impactR"></p>
